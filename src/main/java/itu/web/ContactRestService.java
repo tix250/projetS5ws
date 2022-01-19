@@ -30,8 +30,6 @@ public class ContactRestService {
 	@Autowired
 	private ContactRepository  contactRepository;
 	
-
-	
 	@Autowired
 	private MikaInterface  mika;
 	
@@ -140,10 +138,6 @@ public class ContactRestService {
 		  contactRepository.save(c);
 		  return true;
 	}
-	
-	
-	
-	
 	
 	
 }

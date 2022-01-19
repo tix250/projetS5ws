@@ -69,6 +69,13 @@ public class ContactRestService {
 		
 	}
 	
+	@RequestMapping(value="/insertContact",method=RequestMethod.POST)
+	public void inscription (@RequestBody Contact contact)
+	{
+		contactRepository.save(contact);
+		
+	}
+	
 	@RequestMapping(value="/recherche",method=RequestMethod.POST)
 	public List rechercher (@RequestBody int type , @RequestBody Date date , @RequestBody int statut  )
 	{
